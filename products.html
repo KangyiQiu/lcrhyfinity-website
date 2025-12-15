@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Rhyfinity L.C.</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- <link rel="icon" type="image/png" href="static/images/logo/logo-dark-512.png"> -->
+</head>
+<body class="bg-primary-dark">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg bg-primary-dark border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <!-- <img src="static/images/logo/logo-dark-512.png" alt="Rhyfinity Logo" class="h-8 w-8 mr-2 rounded" /> -->
+                        <a href="index.html" class="text-2xl font-bold gradient-text">Rhyfinity</a>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex md:space-x-8">
+                        <a href="index.html" class="nav-link px-1 pt-1 text-gray-300 hover:text-neon-blue">Home</a>
+                        <a href="products.html" class="nav-link px-1 pt-1 text-gray-300 hover:text-neon-blue">Products</a>
+                        <a href="about.html" class="nav-link px-1 pt-1 text-gray-300 hover:text-neon-blue">About</a>
+                    </div>
+                </div>
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="mobile-menu-button p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                  d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-primary-dark border-b border-gray-800">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">Home</a>
+                <a href="products.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">Products</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="relative dark-section min-h-screen flex items-center justify-center py-40">
+            <div class="absolute inset-0">
+                <img src="static/images/products-hero.jpg" alt="Creative AI Background"
+                     class="w-full h-full object-cover opacity-25">
+            </div>
+            <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
+                <h1 class="text-5xl sm:text-6xl font-extrabold gradient-text mb-6">
+                    AI Meets Story, Performance, and Emotion
+                </h1>
+                <p class="text-xl text-gray-200 max-w-3xl mx-auto">
+                    Rhyfinity L.C. builds creative systems where artificial intelligence
+                    collaborates with theatrical thinking, narrative design, and human expression.
+                </p>
+            </div>
+        </section>
+
+        <!-- Products Overview -->
+        <section class="py-24 bg-white">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12" style="color:#0A659A;">
+                    Our Products and Creative Platforms
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="feature-card p-8 rounded-lg text-center border shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            AI Character Systems
+                        </h3>
+                        <p class="text-gray-700">
+                            Interactive AI characters designed with dramaturgical structure,
+                            emotional continuity, and narrative depth.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-8 rounded-lg text-center border shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Narrative AI Tools
+                        </h3>
+                        <p class="text-gray-700">
+                            Tools that assist writers, performers, and creators in developing
+                            stories, dialogue, and interactive scripts.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-8 rounded-lg text-center border shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
+                            Experiential Applications
+                        </h3>
+                        <p class="text-gray-700">
+                            Apps that explore emotion, companionship, performance, and presence
+                            through AI-driven interaction.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Development Philosophy -->
+        <section class="py-20 dark-section">
+            <div class="max-w-5xl mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-neon-blue mb-12">
+                    Our Creative Approach
+                </h2>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="feature-card p-8 rounded-lg">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            Story-First Design
+                        </h3>
+                        <p class="text-gray-300">
+                            We treat AI systems as performers within a narrative structure,
+                            not just functional tools.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-8 rounded-lg">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            Human-Centered Interaction
+                        </h3>
+                        <p class="text-gray-300">
+                            Emotional pacing, tone, and presence are designed with theatrical
+                            sensibilities.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-8 rounded-lg">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            Selective Use of AI
+                        </h3>
+                        <p class="text-gray-300">
+                            AI is applied where it enhances expression and meaning,
+                            not as a gimmick.
+                        </p>
+                    </div>
+
+                    <div class="feature-card p-8 rounded-lg">
+                        <h3 class="text-lg font-semibold text-white mb-2">
+                            Iterative Refinement
+                        </h3>
+                        <p class="text-gray-300">
+                            We continuously refine interactions through observation,
+                            feedback, and performance testing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Us -->
+        <section class="py-16 bg-primary-dark">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-3xl font-bold text-neon-blue mb-8">
+                    Why Rhyfinity L.C.
+                </h2>
+                <ul class="space-y-4 text-lg text-white">
+                    <li>Interdisciplinary team combining AI engineering and theatrical arts</li>
+                    <li>Focus on meaning, emotion, and narrative continuity</li>
+                    <li>Original approaches beyond conventional AI products</li>
+                    <li>Long-term vision for human–AI creative collaboration</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-6 text-center">
+            <h3 class="text-lg font-semibold gradient-text mb-2">Rhyfinity L.C.</h3>
+            <p class="text-gray-400 mb-4">
+                Exploring the intersection of artificial intelligence and dramatic expression
+            </p>
+            <p class="text-gray-400">
+                © 2025 Rhyfinity L.C. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-button')
+            .addEventListener('click', function () {
+                document.getElementById('mobile-menu').classList.toggle('hidden');
+            });
+    </script>
+    <script src="static/js/main.js"></script>
+</body>
+</html>

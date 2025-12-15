@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhyfinity L.C.</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/style.css">
+    <!-- <link rel="icon" type="image/png" href="static/images/logo/logo-dark-512.png"> -->
+</head>
+<body class="bg-primary-dark">
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg bg-primary-dark border-b border-gray-800">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <!-- <img src="static/images/logo/logo-dark-512.png" alt="Rhyfinity Logo" class="h-8 w-8 mr-2 rounded" /> -->
+                        <a href="index.html" class="text-2xl font-bold gradient-text">Rhyfinity</a>
+                    </div>
+                    <div class="hidden md:ml-10 md:flex md:space-x-8">
+                        <a href="index.html" class="nav-link inline-flex items-center px-1 pt-1 text-gray-300 hover:text-neon-blue">Home</a>
+                        <a href="products.html" class="nav-link inline-flex items-center px-1 pt-1 text-gray-300 hover:text-neon-blue">Products</a>
+                        <a href="about.html" class="nav-link inline-flex items-center px-1 pt-1 text-gray-300 hover:text-neon-blue">About</a>
+                    </div>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="flex items-center md:hidden">
+                    <button type="button" class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
+                        <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div class="hidden md:hidden" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 bg-primary-dark border-b border-gray-800">
+                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">Home</a>
+                <a href="products.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">Products</a>
+                <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">About</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+        <!-- Hero Section (No Image) -->
+        <div class="relative min-h-screen flex items-center justify-center">
+            <!-- Background Image -->
+            <div class="absolute inset-0">
+                <img
+                    src="static/images/values-bg.jpg"
+                    alt="Values Background"
+                    class="w-full h-full object-cover opacity-25"
+                />
+            </div>
+            <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl tracking-tight font-extrabold text-white sm:text-5xl md:text-6xl fade-in">
+                    <span class="block gradient-text">
+                        Where Artificial Intelligence Meets Dramatic Expression
+                    </span>
+                </h1>
+                <p class="mt-6 max-w-3xl mx-auto text-base text-gray-300 sm:text-lg md:text-xl fade-in">
+                    Rhyfinity L.C. is an AI-driven creative studio exploring the fusion of artificial intelligence,
+                    theatre, narrative, and performance. We build intelligent systems that create, interpret,
+                    and perform stories alongside humans.
+                </p>
+                <div class="mt-8 max-w-md mx-auto sm:flex sm:justify-center fade-in">
+                    <a href="products.html"
+                       class="w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-white bg-gradient-to-r from-neon-blue to-neon-purple hover:from-neon-purple hover:to-neon-blue md:py-4 md:text-lg md:px-10">
+                        Explore Our Work
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="py-24 bg-primary-dark">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center">
+                    <h2 class="text-base font-semibold tracking-wide uppercase text-neon-blue">
+                        What We Create
+                    </h2>
+                    <p class="mt-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl">
+                        AI Systems for Storytelling and Performance
+                    </p>
+                </div>
+
+                <div class="mt-20 grid grid-cols-1 gap-12 lg:grid-cols-3">
+                    <!-- Feature 1 -->
+                    <div class="feature-card p-8 rounded-lg">
+                        <h3 class="text-xl font-medium text-white mb-4">
+                            AI Characters and Performers
+                        </h3>
+                        <p class="text-gray-300">
+                            Intelligent characters capable of dialogue, emotional expression,
+                            improvisation, and long-term narrative continuity.
+                        </p>
+                    </div>
+
+                    <!-- Feature 2 -->
+                    <div class="feature-card p-8 rounded-lg">
+                        <h3 class="text-xl font-medium text-white mb-4">
+                            Interactive Dramatic Systems
+                        </h3>
+                        <p class="text-gray-300">
+                            Systems that respond to audience input, user interaction,
+                            and live performance contexts in real time.
+                        </p>
+                    </div>
+
+                    <!-- Feature 3 -->
+                    <div class="feature-card p-8 rounded-lg">
+                        <h3 class="text-xl font-medium text-white mb-4">
+                            Narrative Intelligence
+                        </h3>
+                        <p class="text-gray-300">
+                            AI models designed for story structure, character arcs,
+                            emotional pacing, and theatrical logic.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-primary-dark border-t border-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
+            <h3 class="text-lg font-semibold mb-4 gradient-text">Rhyfinity L.C.</h3>
+            <p class="text-gray-400">
+                Exploring the future of AI-driven theatre and narrative systems
+            </p>
+            <div class="mt-6">
+                <p class="text-gray-400">
+                    &copy; 2025 Rhyfinity L.C. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.mobile-menu-button')
+            .addEventListener('click', function () {
+                document.getElementById('mobile-menu').classList.toggle('hidden');
+            });
+    </script>
+    <script src="static/js/main.js"></script>
+</body>
+</html>
