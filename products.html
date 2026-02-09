@@ -1,195 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Rhyfinity L.C.</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="static/css/style.css">
-    <!-- <link rel="icon" type="image/png" href="static/images/logo/logo-dark-512.png"> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Products - Rhyfinity L.C.</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="static/css/style.css" />
+  <link rel="icon" href="./static/images/logo/logo.png" type="image/png">
+
+  <style>
+    body { color: #111827; }
+    .feature-card { background: rgba(255,255,255,0.85); border: 1px solid rgba(17,24,39,0.06); }
+    .shadow-soft { box-shadow: 0 12px 30px rgba(17,24,39,0.12); }
+    .brand-title { color: #aa3507; }
+  </style>
 </head>
-<body class="bg-primary-dark">
-    <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-opacity-90 backdrop-filter backdrop-blur-lg bg-primary-dark border-b border-gray-800">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="flex justify-between h-16">
-                <div class="flex items-center">
-                    <div class="flex-shrink-0 flex items-center">
-                        <!-- <img src="static/images/logo/logo-dark-512.png" alt="Rhyfinity Logo" class="h-8 w-8 mr-2 rounded" /> -->
-                        <a href="index.html" class="text-2xl font-bold gradient-text">Rhyfinity</a>
-                    </div>
-                    <div class="hidden md:ml-10 md:flex md:space-x-8">
-                        <a href="index.html" class="nav-link px-1 pt-1 text-gray-300 hover:text-neon-blue">Home</a>
-                        <a href="products.html" class="nav-link px-1 pt-1 text-gray-300 hover:text-neon-blue">Products</a>
-                        <a href="about.html" class="nav-link px-1 pt-1 text-gray-300 hover:text-neon-blue">About</a>
-                    </div>
-                </div>
-                <div class="flex items-center md:hidden">
-                    <button type="button" class="mobile-menu-button p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none">
-                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                  d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
-                    </button>
-                </div>
-            </div>
+
+<body class="bg-light-yellow">
+  <!-- Navigation -->
+  <nav class="fixed w-full z-50 bg-white/80 backdrop-filter backdrop-blur-lg border-b border-accent-orange">
+    <div class="max-w-7xl mx-auto px-4">
+      <div class="flex justify-between h-16">
+        <div class="flex items-center">
+          <div class="flex-shrink-0 flex items-center">
+            <a href="index.html" class="flex items-center space-x-2">
+              <img src="./static/images/logo/logo.png" alt="Rhyfinity Logo" class="h-6 w-10 rounded">
+              <span class="text-2xl font-extrabold brand-title">Rhyfinity</span>
+            </a>
+          </div>
+          <div class="hidden md:ml-10 md:flex md:space-x-8">
+            <a href="index.html" class="nav-link px-1 pt-1 text-body hover:text-accent-orange-dark font-medium">Home</a>
+            <a href="products.html" class="nav-link px-1 pt-1 text-body hover:text-accent-orange-dark font-medium">Products</a>
+            <a href="about.html" class="nav-link px-1 pt-1 text-body hover:text-accent-orange-dark font-medium">About</a>
+          </div>
         </div>
 
-        <div class="hidden md:hidden" id="mobile-menu">
-            <div class="px-2 pt-2 pb-3 space-y-1 bg-primary-dark border-b border-gray-800">
-                <a href="index.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">Home</a>
-                <a href="products.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">Products</a>
-                <a href="about.html" class="block px-3 py-2 text-gray-300 hover:text-neon-blue">About</a>
-            </div>
+        <div class="flex items-center md:hidden">
+          <button type="button" class="mobile-menu-button p-2 rounded-md text-body hover:text-accent-orange-dark hover:bg-accent-orange-lightest/30 focus:outline-none">
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                    d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
         </div>
-    </nav>
+      </div>
+    </div>
 
-    <!-- Main content -->
-    <main>
-        <!-- Hero Section -->
-        <section class="relative dark-section min-h-screen flex items-center justify-center py-40">
-            <div class="absolute inset-0">
-                <img src="static/images/products-hero.jpg" alt="Creative AI Background"
-                     class="w-full h-full object-cover opacity-25">
-            </div>
-            <div class="relative z-10 max-w-4xl mx-auto text-center px-6">
-                <h1 class="text-5xl sm:text-6xl font-extrabold gradient-text mb-6">
-                    AI Meets Story, Performance, and Emotion
-                </h1>
-                <p class="text-xl text-gray-200 max-w-3xl mx-auto">
-                    Rhyfinity L.C. builds creative systems where artificial intelligence
-                    collaborates with theatrical thinking, narrative design, and human expression.
-                </p>
-            </div>
-        </section>
+    <div class="hidden md:hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 bg-white border-t border-accent-orange">
+        <a href="index.html" class="block px-3 py-2 text-body hover:text-accent-orange-dark hover:bg-accent-orange-lightest/30 rounded">Home</a>
+        <a href="products.html" class="block px-3 py-2 text-body hover:text-accent-orange-dark hover:bg-accent-orange-lightest/30 rounded">Products</a>
+        <a href="about.html" class="block px-3 py-2 text-body hover:text-accent-orange-dark hover:bg-accent-orange-lightest/30 rounded">About</a>
+      </div>
+    </div>
+  </nav>
 
-        <!-- Products Overview -->
-        <section class="py-24 bg-white">
-            <div class="max-w-5xl mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center mb-12" style="color:#0A659A;">
-                    Our Products and Creative Platforms
-                </h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div class="feature-card p-8 rounded-lg text-center border shadow-sm">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
-                            AI Character Systems
-                        </h3>
-                        <p class="text-gray-700">
-                            Interactive AI characters designed with dramaturgical structure,
-                            emotional continuity, and narrative depth.
-                        </p>
-                    </div>
-
-                    <div class="feature-card p-8 rounded-lg text-center border shadow-sm">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
-                            Narrative AI Tools
-                        </h3>
-                        <p class="text-gray-700">
-                            Tools that assist writers, performers, and creators in developing
-                            stories, dialogue, and interactive scripts.
-                        </p>
-                    </div>
-
-                    <div class="feature-card p-8 rounded-lg text-center border shadow-sm">
-                        <h3 class="text-xl font-semibold mb-4 text-gray-900">
-                            Experiential Applications
-                        </h3>
-                        <p class="text-gray-700">
-                            Apps that explore emotion, companionship, performance, and presence
-                            through AI-driven interaction.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Development Philosophy -->
-        <section class="py-20 dark-section">
-            <div class="max-w-5xl mx-auto px-6">
-                <h2 class="text-3xl font-bold text-center text-neon-blue mb-12">
-                    Our Creative Approach
-                </h2>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                    <div class="feature-card p-8 rounded-lg">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Story-First Design
-                        </h3>
-                        <p class="text-gray-300">
-                            We treat AI systems as performers within a narrative structure,
-                            not just functional tools.
-                        </p>
-                    </div>
-
-                    <div class="feature-card p-8 rounded-lg">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Human-Centered Interaction
-                        </h3>
-                        <p class="text-gray-300">
-                            Emotional pacing, tone, and presence are designed with theatrical
-                            sensibilities.
-                        </p>
-                    </div>
-
-                    <div class="feature-card p-8 rounded-lg">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Selective Use of AI
-                        </h3>
-                        <p class="text-gray-300">
-                            AI is applied where it enhances expression and meaning,
-                            not as a gimmick.
-                        </p>
-                    </div>
-
-                    <div class="feature-card p-8 rounded-lg">
-                        <h3 class="text-lg font-semibold text-white mb-2">
-                            Iterative Refinement
-                        </h3>
-                        <p class="text-gray-300">
-                            We continuously refine interactions through observation,
-                            feedback, and performance testing.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Us -->
-        <section class="py-16 bg-primary-dark">
-            <div class="max-w-4xl mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold text-neon-blue mb-8">
-                    Why Rhyfinity L.C.
-                </h2>
-                <ul class="space-y-4 text-lg text-white">
-                    <li>Interdisciplinary team combining AI engineering and theatrical arts</li>
-                    <li>Focus on meaning, emotion, and narrative continuity</li>
-                    <li>Original approaches beyond conventional AI products</li>
-                    <li>Long-term vision for human–AI creative collaboration</li>
-                </ul>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="bg-primary-dark border-t border-gray-800">
-        <div class="max-w-7xl mx-auto py-12 px-6 text-center">
-            <h3 class="text-lg font-semibold gradient-text mb-2">Rhyfinity L.C.</h3>
-            <p class="text-gray-400 mb-4">
-                Exploring the intersection of artificial intelligence and dramatic expression
-            </p>
-            <p class="text-gray-400">
-                © 2025 Rhyfinity L.C. All rights reserved.
-            </p>
+  <main class="pt-16">
+    <!-- Hero -->
+    <section class="relative py-20">
+      <div class="absolute inset-0 bg-gradient-to-br from-light-yellow via-accent-orange-lightest/30 to-accent-orange-light/20"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="section-kicker">Products</div>
+          <h1 class="section-title">What we’re building</h1>
+          <p class="mt-5 text-muted text-lg leading-relaxed">
+            Rhyfinity L.C. builds AI-powered software products that combine intelligent planning, personalized recommendations,
+            and social interaction to help users set goals and stay motivated.
+          </p>
         </div>
-    </footer>
+      </div>
+    </section>
 
-    <script>
-        document.querySelector('.mobile-menu-button')
-            .addEventListener('click', function () {
-                document.getElementById('mobile-menu').classList.toggle('hidden');
-            });
-    </script>
-    <script src="static/js/main.js"></script>
+    <!-- Product Focus (hover line list instead of small boxes) -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="section-kicker">Focus areas</div>
+          <h2 class="section-title">Core product capabilities</h2>
+          <p class="mt-4 text-muted text-lg leading-relaxed">
+            Our products support users in goal setting, career and learning decisions, and social connection.
+            One core initiative is an AI-based career planning and social application designed to improve decision-making
+            and professional networking through intelligent systems.
+          </p>
+        </div>
+
+        <div class="mt-10 hover-line-list">
+          <div class="hover-line-item">
+            <div class="hover-line-title">Career Planning & Exploration</div>
+            <div class="hover-line-desc">
+              Help users explore directions, clarify goals, and make career decisions with personalized guidance.
+            </div>
+          </div>
+
+          <div class="hover-line-item">
+            <div class="hover-line-title">Intelligent Conversation & Support</div>
+            <div class="hover-line-desc">
+              Provide real-time problem solving and decision support through conversational AI.
+            </div>
+          </div>
+
+          <div class="hover-line-item">
+            <div class="hover-line-title">Task Planning & Breakdown</div>
+            <div class="hover-line-desc">
+              Convert long-term goals into actionable tasks with an execution loop of reminders and reflection.
+            </div>
+          </div>
+
+          <div class="hover-line-item">
+            <div class="hover-line-title">Social Connection & Motivation</div>
+            <div class="hover-line-desc">
+              Enable lightweight social interaction to keep users accountable and motivated.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Core Values (NEW) -->
+    <section class="py-16 bg-light-yellow">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <div class="section-kicker">Our core values</div>
+          <h2 class="section-title">How we build</h2>
+          <p class="mt-4 text-muted text-lg leading-relaxed">
+            These values guide our daily work and how we collaborate across engineering, design, and product.
+          </p>
+        </div>
+
+        <div class="mt-10 hover-line-list">
+          <div class="hover-line-item">
+            <div class="hover-line-title">Human-Centered</div>
+            <div class="hover-line-desc">
+              We put user needs first and design AI experiences that feel supportive and practical.
+            </div>
+          </div>
+
+          <div class="hover-line-item">
+            <div class="hover-line-title">Curiosity & Learning</div>
+            <div class="hover-line-desc">
+              We explore new ideas, test quickly, and keep improving through feedback and iteration.
+            </div>
+          </div>
+
+          <div class="hover-line-item">
+            <div class="hover-line-title">Collaboration</div>
+            <div class="hover-line-desc">
+              We coordinate closely across teams to align on requirements, experience, and delivery.
+            </div>
+          </div>
+
+          <div class="hover-line-item">
+            <div class="hover-line-title">Reliability</div>
+            <div class="hover-line-desc">
+              We build stable systems and clean product experiences users can trust long-term.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-16 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-2xl sm:text-3xl font-extrabold text-body">Want to learn more?</h2>
+        <p class="mt-3 text-muted max-w-2xl mx-auto">
+          Explore our vision and the team behind Rhyfinity.
+        </p>
+        <div class="mt-7">
+          <a href="about.html" class="inline-flex items-center justify-center px-6 py-3 rounded-md bg-accent-orange text-white font-semibold hover:bg-accent-orange-dark">
+            Visit About Page
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-white border-t border-accent-orange">
+    <div class="max-w-7xl mx-auto py-10 px-6 text-center">
+      <p class="text-subtle">© 2025 Rhyfinity L.C. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector('.mobile-menu-button')
+      .addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+      });
+  </script>
+  <script src="static/js/main.js"></script>
 </body>
 </html>
